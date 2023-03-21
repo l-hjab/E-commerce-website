@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device0width,initial-scale=1.0" />
+    <title>Dabewatch</title>
+    <link rel="stylesheet" href=" css/boot.css" />
+    <script src="Daph.js" async></script>
+</head>
+<body>
+    <div class="main">
+        <div class="Header">
+            <div class="head">
+                <img src="Log.png" alt="Webs Logo" />
+            </div>
+            <h2>Welcome to Dabestore</h2>
+            <button class="button" id="button">Shop  With DabeStore  Closet !</button>
+        </div>
+        <div class="Navbar">
+            <div class="topnav">
+                <form>
+                    <input type="text" placeholder="Search Product and Categories" />
+                    <button class="but">Search </button>
+                </form>
+            </div>
+            <!--Link navs-->
+            <div class="bottomnav">
+                <ul>
+                    <li>
+                        <button class="popup-cart-button" id="popup-cart" href="#shopping-cart">CART  🛒</button>
+                    </li>
+                    <li><a href="ABOUTUS.html">ABOUT US</a></li>
+                    <li class="dropdown">
+                        <a href="#">ACCOUNT</a>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href="form.html">Sign Up</a></li>
+                                <li><a href="form.html">Login</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#items ">PRODUCTS</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                </ul>
+            </div>
+        </div>
+        <h3>Ladies Boots</h3>
+
+        <div class="content-row1">
+            <div class="col1">
+                <img class="item-image" src="boot/boot2.jpg" width="400px" height="400px" />
+            </div>
+            <div class="col1">
+                <span class="shop-item-title"><strong>Lightgrey handbag</strong></span>
+                <p>
+                    A pair of long black boots<br />
+                    Similar products from Boots store
+                    4.4 out of 5
+                    (196 verified ratings)<br />                    FDYJE
+                </p>
+                <p>
+                    <span class="shop-item-price">Ksh 3500</span>
+                    <b>Discount 38%</b><br />
+                    Few units left<br />
+
+                    Free delivery (you are saving KSh 84) to CBD - UON/Globe/Koja/River Road
+                </p>
+
+
+            </div>
+            <div class="col3">
+                <button class="btn" id="addtocart-button" type="button">Add to cart</button><br /><br />
+                <h1>YOUR CART IS EMPTY</h1>
+            </div>
+        </div>
+
+        <h4 id="items">Products Related to this item</h4>
+        <div class="content-row2">
+
+            <div class="col2">
+                <span class="shop-item-title"><strong>Lightgrey handbag</strong></span><br />
+                <img class="item-image" src="boot/boot1.jpg" width="240px" height="270px" /><br />
+                <span class="shop-item-price">Ksh 3500</span><br />
+                <p>
+
+                    Ksh 3000<br />
+                    Ksh 500 discount<br />
+                    Dabestore Eligible For free delivery<br />
+                    For Orders above sh 999
+                </p>
+                <div>
+                    <button class="btn" type="button">Add To Cart</button>
+                </div>
+            </div>
+            <div class="col2">
+                <span class="shop-item-title"><strong>Lightgrey handbag</strong></span><br />
+                <img class="item-image" src="boot/boot7.jpg" width="250px" height="250px" /><br />
+                <span class="shop-item-price">Ksh 3500</span>
+                <p>
+
+                    Ksh 4700<br />
+                    Ksh 200 discount<br />
+                    Dabestore Eligible For free delivery<br />
+                    For Orders above sh 999
+                </p>
+                <div>
+                    <button class="btn" type="button">Add To Cart</button>
+                </div>
+            </div>
+            <div class="col2">
+                <span class="shop-item-title"><strong>Lightgrey handbag</strong></span><br />
+                <img class="item-image" src="boot/boot4.jpg" width="250px" height="250px" /><br />
+                <span class="shop-item-price">Ksh 3500</span>
+                <p>
+
+                    Ksh 6500<br />
+                    Ksh 800 discount<br />
+                    Dabestore Eligible For free delivery<br />
+                    For Orders above sh 999
+                </p>
+                <div>
+                    <button class="btn" type="button">Add To Cart</button>
+                </div>
+            </div>
+
+
+            <div class="col2">
+                <span class="shop-item-title"><strong>Lightgrey handbag</strong></span><br />
+                <img class="item-image" src="boot/boot6.jpg" width="250px" height="250px" /><br />
+                <span class="shop-item-price">Ksh 3500</span>
+                <p>
+
+                    Ksh 5470<br />
+                    Ksh 330 discount<br />
+                    Dabestore Eligible For free delivery<br />
+                    For Orders above sh 999
+                </p>
+                <div>
+                    <button class="btn" type="button">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Shopping cart-->
+    <div id="shopping-cart" class="popup-shopping-cart" action="cart.html" method="post">
+        <h3>Shopping Cart</h3>
+        <table class="shopping-cart">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        Item
+                    </th>
+
+                    <th scope="col">Price</th>
+                    <th scope="col">Quantity</th>
+                </tr>
+            </thead>
+        </table>
+
+        <div class="cart-items">
+
+
+
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total :</strong>
+            <span class="cart-total-price">Ksh 0.00</span>
+        </div>
+
+        <div class="links">
+
+            <a class="cont-shopping" href="index.html">Continue Shopping</a><br /><br />
+            <a class="btn-purchase" href="checkout.html">Go To Checkout</a>
+        </div>
+        <button class="close-button" id="close-button"><b>&times</b></button>
+
+
+    </div>
+    <div class="footer">
+        <div class="row1">
+            <div class="col1"> <img src="log.png" width="200px" height="90px" alt=" MyLogo" /></div>
+
+            <div class="col1"><h5>Place Your Order Now</h5></div>
+            <div class="col1">
+                <p>Call Us:+2547 42806 604</p>
+                <p>Email Us @,dabestore21@gmail.com</p>
+            </div>
+            <div class="col1">
+                <p>Follow Us on Our Social Media Platforms<br />To Get New Updates</p>
+            </div>
+        </div>
+
+        <div class="row2">
+
+            <div class="col3">
+                <h4>LET US HELP YOU</h4>
+                <p>Your Account</p>
+                <p>Help Center</p>
+                <p>Return & Replacement</p>
+                <p>How to Shop with Dabestore</p>
+                <p>Help Center</p>
+                <p>Our Logistics and Services</p>
+                <p>Bulk Purchase and Discount</p>
+            </div>
+            <div class="col3">
+                <h4>GET TO KNOW US</h4>
+                <p>About DabeStore</p>
+                <p>Privacy and Cookies</p>
+                <p>Terms And Condtions</p>
+                <p>Products and Sales</p>
+                <p>Our Offers and Promotions</p>
+                <p>Refund and Payment Policy</p>
+
+            </div>
+            <div class="col3">
+                <h4>SHOP WITH DABESTORE</h4>
+                <p>Place Your Order Now</p>
+                <p>Free Delivery around Nairobi</p>
+                <p>Offers Clothes for everyone</p>
+                <p>Limited Time For Offers</p>
+                <p>Products Are Available in all Sizes</p>
+            </div>
+            <div class="col3">
+                <h4>OUR PRODUCTS</h4>
+                <p>Ladies Clothings</p>
+                <p>Mens Clothings</p>
+                <p>Children Clothings</p>
+                <p>Curtains and Shears</p>
+                <p>Shoes For Everyone </p>
+                <p>Beddings</p>
+            </div>
+        </div>
+        <div class="row3">
+            <div class="col4">
+                <h4>JOIN US </h4>
+                <p>Facebook</p>
+                <p>Instagram</p>
+                <p>Youtube</p>
+                <p>Twitter</p>
+            </div>
+            <div class="col4">
+                <h4>PAYMENT METHODS</h4>
+                <p>VISA</p>
+                <p>CREDIT CARD</p>
+                <p>DEBIT CARD</p>
+                <p>CASH</p>
+            </div>
+        </div>
+        <div class="row4">
+            <div class="col1">
+
+                <h4>DABESTORE DELIVERS AROUND;</h4>
+                <p>Nairobi, Mombasa,  Kisumu, Nakuru, Kitale, Kisii</p>
+
+            </div>
+            <div class="col2"><p>Thank You For Shopping With Us..</p></div>
+        </div>
+    </div>
+
+
+</body>

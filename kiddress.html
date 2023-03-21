@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title>Dabestore Closet</title>
+    <link rel="stylesheet" href="css/kiddress.css" />
+    <script src="Daph.js" async></script>
+</head>
+<body>
+    <div class="Header">
+        <div class="head">
+            <img src="Log.png" alt="Webs Logo" />
+        </div>
+        <h2>Welcome to Dabestore</h2>
+        <button class="button" id="button">Shop  With DabeStore  Closet !</button>
+    </div>
+    <div class="Navbar">
+        <div class="topnav">
+            <form>
+                <input type="text" placeholder="Search Product and Categories" />
+                <button class="but">Search </button>
+            </form>
+        </div>
+        <!--Link navs-->
+        <div class="bottomnav">
+            <ul>
+                <li>
+                    <button class="popup-cart-button" id="popup-cart">CART  🛒</button>
+                </li>
+                <li><a href="ABOUTUS.html">ABOUT US</a></li>
+                <li class="dropdown">
+                    <a href="#">ACCOUNT</a>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="form.html">Sign Up</a></li>
+                            <li><a href="form.html">Login</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#items ">PRODUCTS</a></li>
+                <li><a href="index.html">HOME</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <h3> Dresses For small girls</h3>
+        <div class="content-row1">
+            <div class="col1">
+                <img class="item-image" src="kiddress/kiddress1.jpg" width="400px" height="400px" />
+            </div>
+            <div class="col1">
+                <span class="shop-item-title"><strong>Fancy Green dress</strong></span>
+                <p class="par">
+                    Available in different colors and <br />in
+                    Different sizes
+                    <br />
+                    Dabestore Eligible For free delivery<br />
+                    For Orders above Ksh 999
+                </p>
+                <hr />
+                <span class="shop-item-price">Ksh 3500</span>
+                <p>Fit :As expected</p>
+                <h5>Product details</h5>
+                <p><b>Fabric type</b>  51%polyster</p>
+                <p><b>Origin:</b>Made from Nairobi Kenya</p>
+            </div>
+            <div class="col1">
+                <button class="btn" id="addtocart-button" type="button">Add to cart</button><br /><br />
+                <h1>YOUR CART IS EMPTY</h1>
+            </div>
+        </div>
+
+        <h4 id="items">Products Related to this item</h4>
+        <div class="content-row2">
+            <div class="col2">
+                <span class="shop-item-title"><strong>flowish orange dress</strong></span><br />
+                <img class="item-image" src="kiddress/kiddress2.jpg" width="200px" height="270px" /><br />
+                <span class="shop-item-price">Ksh 1850</span>
+                <p>
+                    Ksh 305 discount<br />
+                    Dabestore Eligible For free delivery<br />
+                    For Orders above sh 999
+                </p>
+                <div>
+                    <button class="btn" type="button">Add To Cart</button>
+                </div>
+            </div>
+            <div class="col2">
+                <span class="shop-item-title"><strong>flowish dress</strong></span><br />
+                <img class="item-image" src="kiddress/kiddress4.jpg" width="200px" height="270px" /><br />
+                <span class="shop-item-price">Ksh 2309.10</span>
+                <p>
+                    Ksh 500 discount<br />
+                    Dabestore Eligible For free delivery<br />
+                    For Orders above sh 999
+                </p>
+                <div>
+                    <button class="btn" type="button">Add To Cart</button>
+                </div>
+            </div>
+            <div class="col2">
+                <span class="shop-item-title"><strong>white with golden strips</strong></span><br />
+                <img class="item-image" src="kiddress/kiddress5.jpg" width="200px" height="270px" /><br />
+                <span class="shop-item-price">Ksh 3700</span>
+                <p>
+                    Ksh 209 discount<br />
+                    Dabestore Eligible For free delivery<br />
+                    For Orders above sh 999
+                </p>
+                <div>
+                    <button class="btn" type="button">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="col2">
+                <span class="shop-item-title"><strong>Fancy dress</strong></span><br />
+                <img class="item-image" src="kiddress/kiddress1.jpg" width="270px" height="270px" /><br />
+                <span class="shop-item-price">Ksh 2300</span>
+                <p>
+                    Ksh 299 discount<br />
+                    Dabestore Eligible For free delivery<br />
+                    For Orders above sh 999
+                </p>
+                <div>
+                    <button class="btn" type="button">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Shopping cart-->
+    <div id="shopping-cart" class="popup-shopping-cart" action="cart.html" method="post">
+        <h3>Shopping Cart</h3>
+        <table class="shopping-cart">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        Item
+                    </th>
+
+                    <th scope="col">Price</th>
+                    <th scope="col">Quantity</th>
+                </tr>
+            </thead>
+        </table>
+
+        <div class="cart-items">
+            
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total :</strong>
+            <span class="cart-total-price">Ksh 0.00</span>
+        </div>
+
+        <div class="links">
+
+            <a class="cont-shopping" href="index.html">Continue Shopping</a><br /><br />
+            <a class="btn-purchase" href="checkout.html">Go To Checkout</a>
+        </div>
+        <button class="close-button" id="close-button"><b>&times</b></button>
+    </div>
+    <div class="footer">
+        <div class="row1">
+            <div class="col1"> <img src="log.png" width="200px" height="90px" /></div>
+
+            <div class="col1"><h5>Place Your Order Now</h5></div>
+            <div class="col1">
+                <p>Call Us:+2547 42806 604</p>
+                <p>Email Us @,dabestore21@gmail.com</p>
+            </div>
+            <div class="col1">
+                <p>Follow Us on Our Social Media Platforms<br />To Get New Updates</p>
+            </div>
+        </div>
+
+        <div class="row2">
+
+            <div class="col3">
+                <h4>LET US HELP YOU</h4>
+                <p>Your Account</p>
+                <p>Help Center</p>
+                <p>Return & Replacement</p>
+                <p>How to Shop with Dabestore</p>
+                <p>Help Center</p>
+                <p>Our Logistics and Services</p>
+                <p>Bulk Purchase and Discount</p>
+            </div>
+            <div class="col3">
+                <h4>GET TO KNOW US</h4>
+                <p>About DabeStore</p>
+                <p>Privacy and Cookies</p>
+                <p>Terms And Condtions</p>
+                <p>Products and Sales</p>
+                <p>Our Offers and Promotions</p>
+                <p>Refund and Payment Policy</p>
+
+            </div>
+            <div class="col3">
+                <h4>SHOP WITH DABESTORE</h4>
+                <p>Place Your Order Now</p>
+                <p>Free Delivery around Nairobi</p>
+                <p>Offers Clothes for everyone</p>
+                <p>Limited Time For Offers</p>
+                <p>Products Are Available in all Sizes</p>
+            </div>
+            <div class="col3">
+                <h4>OUR PRODUCTS</h4>
+                <p>Ladies Clothings</p>
+                <p>Mens Clothings</p>
+                <p>Children Clothings</p>
+                <p>Curtains and Shears</p>
+                <p>Shoes For Everyone </p>
+                <p>Beddings</p>
+            </div>
+        </div>
+        <div class="row3">
+            <div class="col4">
+                <h4>JOIN US </h4>
+                <p>Facebook</p>
+                <p>Instagram</p>
+                <p>Youtube</p>
+                <p>Twitter</p>
+            </div>
+            <div class="col4">
+                <h4>PAYMENT METHODS</h4>
+                <p>VISA</p>
+                <p>CREDIT CARD</p>
+                <p>DEBIT CARD</p>
+                <p>CASH</p>
+            </div>
+        </div>
+        <div class="row4">
+            <div class="col1">
+
+                <h4>DABESTORE DELIVERS AROUND;</h4>
+                <p>Nairobi, Mombasa,  Kisumu, Nakuru, Kitale, Kisii</p>
+
+            </div>
+            <div class="col2"><p>Thank You For Shopping With Us..</p></div>
+        </div>
+    </div>
+
+</body>

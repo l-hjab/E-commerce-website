@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Form</title>
+    <link rel="stylesheet" href="css/form.css" />
+    <script src="Popup.js" async></script>
+    <script src="practise.js" async></script>
+</head>
+<body>
+    <div class="Header">
+        <div class="head">
+            <img src="Log.png" alt="Webs Logo" />
+        </div>
+        <h2>Welcome to Dabestore</h2>
+        <button class="button" id="button">Shop  With DabeStore  Closet !</button>
+    </div>
+    <div class="forms">
+        <!--login-->
+        <div class="main">
+
+            <!--Button to homepage-->
+            <form class="add-to-cart" name="myForm" action="index.html" method="post">
+                <div id="user-details">
+                    <h2>Login</h2>
+                    <div id="user-detail-content">
+                        <div>
+                            <label for="email">Email</label><br />
+                            <input type="text" id="email" name="email" data-type="string" required />
+                        </div>
+                        <div>
+                            <label for="password">Password</label><br />
+                            <input type="password" name="password" id="password" required />
+                        </div><br />
+                    </div>
+                    <!--Paypal-->
+
+                    <form id="paypal-form" action="" method="post">
+                        <input type="submit" id="submit" class="btn-submit" value="Submit" /><br /><br />
+
+                </div>
+                <p>Don't Have an Account?'<a href="checkout.html" style="color:orangered">Sign Up</a></p>
+            </form>
+           
+        </div>
+       
+
+        <!--Sign Up form
+        <div class="signup-form">
+            <form class="form" id="form" onsubmit="return verifypassword()">
+                <h4>Sign Up with Dabestore</h4>
+
+                <div class="col1">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required />
+                    <small>Error Message</small>
+                </div>
+                <div class="col1">
+                    <label for="text">First Name</label>
+                    <input type="text" name="fname" id="fname" minlength="3" max="15" required />
+                    <span id="message" style="color:red"></span><br />
+                </div>
+                <div class="col1">
+                    <label for="LName">Last Name</label>
+                    <input type="text" name="lname" id="lname" minlength="3" max="15" required />
+                    <span id="message" style="color:red"></span><br />
+                </div>
+                <div class="col1">
+                    <label for="gender">Gender</label>
+                    <select>
+                        <option>Female</option>
+                        <option>Male</option>
+                        <option>Others</option>
+                    </select>
+                </div>
+                <div class="col1">
+                    <label infor="Password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Create Password" minlength="8" maxlength="12" required />
+                    <span id="message" style="color:red"></span><br />
+                </div>
+                <div class="col1">
+                    <label for="Password">Confirm Password</label>
+                    <input type="password" name="confirm-password" id="confirmpassword" placeholder="Confirm password" minlength="8" max="12" required />
+                    <span id="message" style="color:red"></span><br />
+                </div><br />
+                <button class="signUp-but" href=>SignUp</button><br />
+                <div class="col2">
+
+                </div>
+            </form>
+        </div>-->
+    </div>
+
+</body>
+</html>

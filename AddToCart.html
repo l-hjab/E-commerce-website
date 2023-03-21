@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="css/AddToCart.css" />
+    <title>Cart Page</title>
+    <script src="practise.js" async></script>
+</head>
+<body>
+    <section>
+        <div class="shop-item">
+            <div class="product">
+                <div class="shop-item">
+                    <span class="shop-item-title">Dress</span>
+                    <img  class="item-image" src="dress6.jpg" width="200" height="270" /><br />
+                    <span class="shop-item-price">Ksh 2500</span>
+                    <p>
+                        African dresses<br />For Ladies<br />
+                        Ksh 2500<br />
+                        Ksh 500 discount<br />
+                        Dabestore Eligible For free delivery<br />
+                        For Orders above sh 999
+                    </p>
+                    <div class="shop-item-details">
+                        <button class="shop-item-button" type="button">Add To Cart</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="shopping-cart" action="cart.html" method="post">
+        <table class="shopping-cart">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        Item
+                    </th>
+                    
+                    <th scope="col">Price</th>
+                    <th scope="col">Quantity</th>
+                </tr>
+            </thead>
+        </table>
+
+        <div class="cart-items">
+            <div class="cart-row">
+                <div class="cart-column1">
+                    <img src="dress4.jpg" width="100" height="100" alt="DAPHY" />
+                    <span class="cart-itemtitle">Her</span>
+
+                </div>
+                <span class="cart-item-price">Ksh 8900.50</span>
+                <div class="cart-column2">
+                    <input class="cart-quantity" type="number" value="1" />
+                    <button class="btn-remove" id="btn" type="button">Empty-cart</button>
+                </div>
+                
+
+            </div>
+            <hr />
+            <div class="cart-row">
+                <div class="cart-column1">
+                    <img src="Kiddress/kiddress2.jpg" width="100" height="100" alt="DAPHY" />
+                    <span class="cart-itemtitle">Her</span>
+
+                </div>
+                <span class="cart-item-price">Ksh 2579.56</span>
+                <div class="cart-column2">
+                    <input class="cart-quantity" type="number" value="3" />
+                    <button class="btn-remove" type="button">Empty-cart</button>
+                </div>
+
+            </div>
+            <hr />
+
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total :</strong>
+            <span class="cart-total-price">Ksh 5000</span>
+        </div>
+        <button class="btn-purchase" id="btn-pur">Purchase</button>
+
+        <ul>
+            <li><a href="index.html" class="btn">Continue Shopping</a></li>
+            <li><a href="checkout.html" class="btn">Go To Checkout</a></li> 
+        </ul>
+                
+            
+    </div>
+        
+
+</body>
+</html>

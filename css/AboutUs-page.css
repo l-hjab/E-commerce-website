@@ -1,0 +1,272 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: cornsilk;
+    overflow-x:hidden;
+}
+
+.Header {
+    padding: 6px;
+    background-color: #2E3047;
+    color: ghostwhite;
+    display: flex;
+    font-family: Poppins;
+}
+
+.head {
+    width: 30%;
+    text-align: center;
+}
+
+h2 {
+    color: snow;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: right;
+    animation: mymove 6s infinite;
+    text-shadow: 2px 2px 1px black;
+}
+
+@keyframes mymove {
+    50% {
+        transform: Scale(2,2);
+    }
+}
+
+.button {
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: orangered;
+    margin: 13px;
+    width: 300px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    color: indigo;
+    position: relative;
+    left: 200px;
+    cursor: pointer;
+    text-shadow: 2px 2px 1px black;
+}
+
+.btn:hover {
+    transition: 0.3s ease;
+    background-color: antiquewhite;
+}
+
+.Navbar {
+    background-color: #3C3F58;
+    display: flex;
+    margin: auto;
+    padding: 12px;
+}
+
+.topnav {
+    width: 50%;
+}
+
+    .topnav input {
+        padding: 6px;
+        width: 400px;
+        margin: 10px;
+        text-align: center;
+        font-size: 18px;
+        background-color: antiquewhite;
+    }
+
+.but {
+    padding: 10px;
+    background-color: darkorange;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    font-size: 15px;
+   
+}
+
+.main {
+    background-color: cornsilk;
+    margin: 0px;
+}
+
+    .main h4 {
+        color: cadetblue;
+        font-size: 30px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: azure;
+        padding: 20px;
+        margin-top: 0px;
+        text-shadow: 2px 2px 1px black;
+    }
+    .row{
+        display:flex;
+        padding:20px;
+    }
+
+.row .col1{
+    text-align:center;
+    color:#2E3047;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:600;
+    padding:20px;
+}
+.main h1{
+    text-align:center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:orangered;
+    font-size:35px;
+    text-shadow:2px 2px 1px black; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    position: relative;
+    font-family: Arial;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: default;
+}
+
+    .footer .row1 {
+        background-color: #2E3047;
+        display: flex;
+        font-size: 18px;
+    }
+
+.row1 .col1 {
+    margin-right: 30px;
+    flex-basis: 30%;
+}
+
+    .row1 .col1 p {
+        text-align: right;
+        color: aqua;
+        margin-right: 20px;
+    }
+
+.row1 h5 {
+    font-size: 20px;
+    color: gold;
+}
+
+.footer .row2 {
+    display: flex;
+    background-color: #3C3F58;
+    color: honeydew;
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+.row2 .col3 {
+    padding: 20px;
+    flex-basis: 30%;
+    text-align: center;
+    margin: 0;
+}
+
+.footer .row3 {
+    display: flex;
+    background-color: #2E3047;
+    flex-basis: 30%;
+}
+
+.row3 .col4 {
+    text-align: right;
+    flex-basis: 25%;
+    text-align: center;
+}
+
+.footer .row4 {
+    display: flex;
+    background-color: #3C3F58;
+    position: relative;
+}
+
+.row4 .col1 {
+    color: honeydew;
+    text-align: center;
+}
+
+.row4 .col2 p {
+    position: absolute;
+    right: 100px;
+    top: 40%;
+    color: orangered;
+    cursor: default;
+}
+/*responsive*/
+@media only screen and (max-width:850px) {
+    .Header {
+        padding: 10px;
+        flex-direction: column;
+        height: 150px;
+    }
+
+    .head img {
+        width: 100px;
+        height: 50px;
+        position: absolute;
+        margin: 10px 0px 5px;
+    }
+
+    h2 {
+        position: absolute;
+        font-size: 15px;
+        top: 10%;
+        margin: 10px;
+        text-align: center;
+        left: 50px;
+    }
+
+    .button {
+        padding: 2px;
+        width: 100px;
+        font-size: 10px;
+        top: 10%;
+        left: 300px;
+        position: absolute;
+        margin-left: 10px;
+    }
+
+    .Navbar {
+        flex-direction: column;
+    }
+
+    .content-row1 {
+        flex-direction: column;
+    }
+
+    .content-row2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer .row1 {
+        flex-direction: column;
+    }
+
+    .footer .row2 {
+        flex-direction: column;
+    }
+
+    .row4 .col2 {
+        display: none;
+    }
+}
+
+

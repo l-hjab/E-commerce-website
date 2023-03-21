@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Order Page</title>
+    <link rel="stylesheet" href="css/order.css" />
+</head>
+<body>
+    <div id="user-details">
+        <h2>Make  payment </h2>
+        <div id="user-detail-content">
+            <table>
+                <tr>
+                    <td>
+                        <label for="address"> Resident Address</label>
+                    </td>
+                    <td> <input type="text" id="address" name="address" data-type="string" required /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="address"> Phone Number</label>
+                    </td>
+                    <td> <input type="text" id="address" name="address" data-type="string" required /></td>
+                </tr>
+                <tr>
+                    <td> <label for="county">County</label></td>
+                    <td>
+                        <select required>
+                            <option></option>
+                            <option>Nairobi</option>
+                            <option>Mombasa</option>
+                            <option>Nakuru</option>
+                            <option>Embu</option>
+                            <option>Meru</option>
+                            <option>Nyeri</option>
+                        </select>
+                    </td>
+                <tr>
+                    <td><label for="zip">ZIP Code</label></td>
+                    <td><input type="text" id="zip" name="zip" data-type="string" data-messege="this field cannot be empty" required /></td>
+                </tr>
+                <tr>
+                <td> <label for="delivery">Method of Delivery</label></td>
+                <td>
+                    <select required>
+                        <option></option>
+                        <option>Door to Door</option>
+                        <option>Pick Up</option>
+                    </select>
+                </td>
+                <tr>
+            </table>
+        </div>
+        <!--Paypal-->
+        <div col="payment">
+           <br > <input type="submit" id="paypal-btn" class="butt" href="" value="Pay with MPESA" /><br /><br />
+            <input type="submit" id="paypal-btn" class="btn" value="Pay with PayPal" /><br />
+            <table>
+                <tr>
+                    <td>
+                        <input type="email" id="p-email" name="p-email" data-type="string" placeholder="Enter  Your PayPal Email" required />
+                        <button href="" >Submit</button>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <div>
+  
+        <br ><br /><a class="index" href="index.html"><i>Return to home page</i></a>
+            </div>
+</body>
+</html>
